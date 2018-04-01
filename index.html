@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <div class="box">
+		<div class="ss">sdfsdf</div>
+		<input type="text" value="23">
+		<input type="text">
+		<input type="text">
+	</div>
+	<select>
+  <option value ="volvo">Volvo</option>
+  <option value ="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+ -->
+<div>
+
+ 	<div id="ab">fgfdgfdgfdg</div>
+ 	<div id="hg">fgfdgfdgfdg</div>
+ 	<div id="a">6666666666</div>
+ 	<div class="a">6666666666</div>
+ 	<div class="a">6666666666</div>
+ </div>
+	<form onsubmit="return false">
+			
+		<input type="text" placeholder="输入账号" >
+		<input type="password" placeholder="输入密码">
+		 <input type="submit" value="保存类型">
+		<button>爆粗</button>
+	</form>
+
+</body>
+</html>
+<style>
+	#ab{
+		/*color: red!important;*/
+		font-family: Times New Roman;
+	}
+</style>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+	
+
+
+	console.log(5,$('#a'))
+	console.log(6,$('.a'))
+
+
+	$('form').submit(()=>{
+			// alert(31)
+			  x=$("form").serializeArray();
+			  console.log('xxxx',x)
+	})
+
+
+
+
+
+
+
+
+	var obj = document.querySelector('.box');
+	// document.querySelectorAll('input').forEach(item=>{
+			
+	// 		item.addEventListener('input',()=>{alert(3)}, false)
+	// })
+	console.log(document.querySelectorAll('input'))
+
+	var arr = [
+		{name:'美金',val:'dollar'},
+		{name:'人民币',val:'rmb'},
+		{name:'日币',val:'rb'},			
+	]
+	var str = `<select value="rb">`
+	arr.forEach(i=>{
+console.log(i.val)
+		str += `
+			 
+			 <option value="${i.val}">${i.name}</option>
+			<
+		`
+	})
+
+	str += '/select><span class="test"></span>'
+	
+	// obj.innerHTML = str
+	console.log(5555,document.querySelector('.ss'))
+// document.querySelector('select').value = 'rb'
+
+
+
+
+</script>
